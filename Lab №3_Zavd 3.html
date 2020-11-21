@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <label>Фунты</label>
+        <input id="inputPounds" type="number" placeholder="Фунты" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+      </p>
+      <p>Килограммы: <span id="outputKilograms"></span></p>
+      
+      <script>
+      function weightConverter(valNum) {
+        document.getElementById("outputKilograms").innerHTML=valNum/2.2046;
+      }
+      </script>
+
+
+<h2>Сложение двух чисел</h2>
+<input id="num1"/>
+ <p>+</p>
+ <input id="num2"/>
+ <button onclick="func()">Сложить</button>
+
+ <p id="result"></p>
+
+ <script>
+    function func(){
+          var num1 = Number(document.getElementById("num1").value);
+          var num2 = Number(document.getElementById("num2").value);
+          var result = num1 + num2;
+
+          document.getElementById("result").innerHTML = result;
+          }
+ </script>
+
+<h2>Точное значение range</h2>
+<form name="registrationForm">
+    0<input type="range" name="ageInputName" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value">100
+    <output name="ageOutputName" id="ageOutputId">24</output>
+ </form>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="@" method="GET">
+        <table>
+            <tr>
+                <td>Логин:</td><td><input type="text" name="logins"></td>
+            </tr>
+            <tr>
+                <td>Пароль:</td><td><input type="password" name="passwords" required></td>
+            </tr>
+            <tr>
+                <td>Повторите пароль:</td><td><input type="password" name="passwords1" required></td>
+            </tr>
+
+            <tr>
+                <td>Стать:</td><td><input type="radio">Мужской <input type="radio">Женский
+            </tr>
+
+            <tr>
+               <td>Город:</td><td><select id="gorod" name="gorod">
+                   <option value="kiev">Киев</option>
+                   <option value="london">Лондон</option>
+                   <option value="paris">Париж</option>
+               </select></td>
+            </tr>
+
+            <tr>
+                <td>Интересы:</td><td><input type="checkbox">Футбол <input type="checkbox">Шашки<input type="checkbox">Шахматы<input type="checkbox">Музыка</td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Отправить"></td><td><input type="reset" value="очистить"></td>
+            </tr>
+        </table>
+ 
+         
+ 
+     </form>
+</body>
+</html>

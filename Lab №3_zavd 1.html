@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="@" method="GET">
+       <p> <label for="logins">Логин:</label>
+        <input type="text" name="logins" autofocus></p>
+
+        <p>
+            <label for="passwords">Пароль:</label>
+            <input type="password" name="passwords" required>
+        
+        </p>
+        <p>
+            <label for="passwords1">Повторите пароль:</label>
+            <input type="password" name="passwords1" required>
+
+        </p>
+
+        <p>
+            <label>Стать:</label>
+            <input type="radio">Мужской
+            <input type="radio">Женский
+        </p>
+
+        <p>
+            <label for="countrys">Страна:</label>
+            <select id="countrys" name="countrys">
+                <option value="ukraine">Украина</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+        </p>
+
+        <P>
+            <label for="aboutMe">Про себя:</label>
+            <textarea name="aboutMe" id="aboutMe" placeholder="Не более 100 символов" maxlength="100"></textarea>
+        </P>
+
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+
+        
+
+    </form>
+    
+</body>
+</html>
